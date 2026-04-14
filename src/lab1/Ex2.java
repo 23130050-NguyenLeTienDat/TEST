@@ -1,7 +1,7 @@
 package lab1;
 
 public class Ex2 {
-    public boolean check(int num){
+    public static boolean check(int num){
         if(num%2 ==0) {
             return true;// tra ve tru neu la so chan
         }else{
