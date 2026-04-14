@@ -4,7 +4,7 @@ public class AppTest {
     public static void main(String[] args) {
         Ex2 e = new Ex2();
 
-        if (!Ex2.check(4)) {
+        if (Ex2.check(4)) {
             throw new RuntimeException("Test failed: 4 should be even");
         }
 
