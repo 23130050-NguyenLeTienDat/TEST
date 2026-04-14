@@ -1,13 +1,26 @@
 package lab1;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 public class AppTest {
-    @Test
-    void testAdd() {
-        assertEquals(1,Ex2.check(4));
+    public static void main(String[] args) {
+        Ex2 e = new Ex2();
+
+        if (!Ex2.check(4)) {
+            throw new RuntimeException("Test failed: 4 should be even");
+        }
+
+        if (Ex2.check(5)) {
+            throw new RuntimeException("Test failed: 5 should be odd");
+        }
+
+        // Test isPrime()
+        if (!e.isPrime(17)) {
+            throw new RuntimeException("Test failed: 17 is prime");
+        }
+
+        if (e.isPrime(4)) {
+            throw new RuntimeException("Test failed: 4 is not prime");
+        }
+
+        System.out.println("All tests passed ✅");
     }
 }

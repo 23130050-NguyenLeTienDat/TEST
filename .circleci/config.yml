@@ -9,12 +9,12 @@ jobs:
       - checkout
 
       - run:
-          name: Compile Java
-          command: javac -d . src/lab1/Ex2.java
+          name: Compile
+          command: javac -d . src/lab1/*.java
 
       - run:
-          name: Run Java
-          command: java lab1.Ex2
+          name: Run Tests
+          command: java lab1.AppTest
 
 workflows:
   build_workflow:
