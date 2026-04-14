@@ -8,6 +8,6 @@ import static org.junit.Assert.assertTrue;
 public class AppTest {
     @Test
     void testAdd() {
-        assertTrue(Ex2.check(4));
+        assertEquals(1,Ex2.check(4));
     }
 }
